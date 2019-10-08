@@ -1,0 +1,16 @@
+.item{
+    border:1px solid #333;
+    border-radius: 15rpx;
+    width:240rpx;
+    font-size: 30rpx;
+    margin-top: 20rpx;
+  }
+  image{
+    width:240rpx;
+    height:240rpx;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }

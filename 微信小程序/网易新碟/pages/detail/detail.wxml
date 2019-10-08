@@ -1,0 +1,30 @@
+<view class="container">
+    <view wx:for="{{detail}}" wx:key="{{item}}">
+        <view class="nav">
+        <view class="bg">
+            <image src="{{item.pic}}"></image>
+        </view>
+        <view class="nav-right">
+            <view class="name">{{item.name}}</view>
+            <text>歌手:{{item.artists}}</text>
+            <view>发行时间:{{item.time}}</view>
+        </view>
+        
+    </view>
+    <view class="synopsis {{isFolded?'hide':'show'}}">
+        <text>简介:{{item.description}}</text>
+    </view>
+    <view class="drop">
+        <view bind:tap="change" class="state">{{isFolded?'展开':'收起'}}</view> 
+    </view>
+    </view>
+    <view class="list">歌曲列表</view>
+    <view class="songs" wx:for="{{music}}" wx:key="{{item}}">
+        <view class="num"><text>{{index+1}}</text></view>
+        <view class="music">
+            <view>{{item.title}}</view>
+            <text>{{item.name}}-{{item.title}}</text>
+        </view>
+        <image class="play" src="../../images/pause.png"></image>
+    </view>
+</view>

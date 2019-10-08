@@ -1,0 +1,19 @@
+<view class="nav">
+  <text class="radio">热门电台</text>
+  <text>文学艺术</text>
+  <text>中国史</text>
+</view>
+<view class="container">
+  <view class="item" wx:for="{{radios}}" wx:key="{{item}}" data-id = "{{item.id}}" data-name="{{item.name}}"
+  data-title="{{item.title}}" data-subcount="{{item.subcount}}"
+  data-imgurl="{{item.imgurl}}" data-blururl="{{item.blururl}}" 
+  data-picurl="{{item.picurl}}" bind:tap="handleClick">
+      <image class="" src="{{item.imgurl}}"></image>
+      <view class="right">
+          <text>{{item.name}}</text>
+          <view><text class="title">{{item.title}}</text></view>
+          <text class="count">播放{{item.listenerCount}}  点赞{{item.likedCount}}</text>
+          <view><text class="category">{{item.category}}</text></view>
+      </view>
+  </view>
+</view>

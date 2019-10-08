@@ -1,0 +1,42 @@
+.form{
+    display: flex;
+    padding: 10px 20px;
+    background: #dfdede;
+  }
+  input{
+    height: 60rpx;
+    width: 560rpx;
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  button{
+    height: 60rpx;
+    width: 50px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(206, 205, 205);
+    font-size: 12px;
+  }
+  /* 内容部分 */
+  .item{
+    display: flex;
+    padding: 10px;
+  }
+  image{
+    width: 140rpx;
+    height: 200rpx;
+  }
+  .right{
+    padding-left:15px ;
+  }
+  .title{
+    color: #3377AA;
+  }
+  .num{
+    font-size: 13px;
+  }
+  .author{
+    font-size: 12px;
+    color: #999999;
+  }

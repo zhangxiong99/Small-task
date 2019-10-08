@@ -1,0 +1,72 @@
+*{margin:0;padding:0}
+.nav{
+    width: 1800px;
+    height: 58px;
+    background-color: blanchedalmond;
+}
+.content{
+    cursor: pointer;
+    position: relative;
+    width:508px;
+    height:508px;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid #333;
+}
+#list{
+    position: absolute;
+    width:600px;
+    height:400px;
+}
+#list img,#prev,#next,#btns{
+    position: absolute;
+}
+#list img:not(:first-child){
+    display: none;
+}
+#prev,#next{
+    cursor: pointer;
+    top:50%;
+     transform: translateY(-50%); 
+    z-index: 100;
+    width:40px;
+    height:70px;
+    background:url("images/icon-slides.png");
+    border:none;
+}
+
+#prev{
+    background-position-x:-86px
+}
+
+#prev:hover{
+    background-position: 0;
+}
+
+#next{
+    right:0;
+    background-position-x:-125px;
+}
+
+#next:hover{
+    background-position-x: -43px
+}
+
+#btns{
+    z-index: 101;
+    transform: translateX(-50%);
+    bottom: 20px;
+    left:50%;
+}
+#btns .current{
+    background:orangered;
+}    
+#btns>span{
+    cursor: pointer;
+    width:20px;
+    height:20px;
+    display: inline-block;
+    border-radius: 50%;
+    border:1px solid #fff;
+    background-color:rgba(44,44,44,.3);
+}

@@ -1,0 +1,45 @@
+.num{
+    margin-right: 10rpx;
+    font-size: 40rpx;
+    color: #C20C0C;
+    width: 20px;
+    text-align: right;
+  }
+  .img{
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 30rpx;
+  }
+  .left view{
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .item .left{
+    display: flex;
+    align-items: center;
+  }
+  .play{
+    width: 40px;
+    height: 40px;
+  }
+  text.name{
+    color:rgb(69, 162, 233);
+    font-size: 35rpx;
+    
+  }
+  .item .right{
+    display: flex;
+    align-items: center;
+  }
+  .item .play{
+    margin-left: 20px;
+  }

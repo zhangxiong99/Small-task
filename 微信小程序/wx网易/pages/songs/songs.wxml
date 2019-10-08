@@ -1,0 +1,18 @@
+<view class="content">
+    <view class="item" wx:for="{{songs}}" wx:key="{{item}}" bind:tap="handleClick" data-id="{{item.id}}"
+    data-index="{{index}}" data-title="{{item.title}}"
+    data-name="{{item.name}}" data-imgUrl="{{item.imgUrl}}">
+      <view class="left">
+        <text class="num">{{index+1}}</text>
+        <image src="{{item.imgUrl}}" class="img"></image>
+        <view>
+          <text class="name">{{item.title}}</text>
+          <view>by:<text>{{item.name}}</text></view>
+        </view>
+      </view>
+      <view class="right">
+          <text>3:29</text>
+          <image class="play" src="{{isPlay&&prevId==item.id?'../../images/play.png':'../../images/pause.png'}}"></image>
+      </view>
+    </view>
+  </view>

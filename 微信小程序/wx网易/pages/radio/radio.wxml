@@ -1,0 +1,16 @@
+<view class="nav">
+    <text class="radio">热门电台</text>
+    <text>文学艺术</text>
+    <text>中国史</text>
+</view>
+<view class="container">
+    <view class="item" wx:for="{{radios}}" wx:key="{{item}}">
+        <image class="" src="{{item.imgUrl}}"></image>
+        <view class="right">
+            <text>{{item.name}}</text>
+            <view><text class="title">{{item.title}}</text></view>
+            <text class="count">播放{{item.listenerCount}}  点赞{{item.likedCount}}</text>
+            <view><text class="category">{{item.category}}</text></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+<view class="container" wx:for="{{detail}}" wx:key="{{item}}">
+    <image src="{{item.imgUrl}}"></image>
+    <view class="text">
+        <text>{{item.summary}}</text>
+    </view>
+</view>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="lunbo.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div class="nav">
+       <ul>
+        <a href="http://news.baidu.com">新闻</a>
+        <a href="">hao123</a>
+        <a href="">地图</a>
+        <a href="">视频</a>
+        <a href="">贴吧</a>
+        <a href="">学术</a>
+        <a href="">登录</a>
+        <a href="">设置</a>
+        <a href="">更多产品</a>
+       </ul>
+    </div>
+    <div class="content">
+        <div id="list">
+            <img src="images/01.jpg" alt="">
+            <img src="images/02.jpg" alt="">
+            <img src="images/03.jpg" alt="">
+            <img src="images/04.jpg" alt="">
+            <img src="images/05.jpg" alt="">
+        </div>
+        <button id="prev"></button>
+        <button id="next"></button>
+        <div id="btns">
+            <span class="current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+   <script>
+        var index = 0;
+        $("#next").click(function () {
+            if (!$("#list>img").is(":animated")) {
+                index++;
+                if (index > 4) {
+                    index = 0;
+                }
+                animate(index)
+            }
+        })
+        $("#prev").click(function () {
+            if (!$("#list>img").is(":animated")) {
+                index--;
+                if (index < 0) {
+                    index = 4;
+                }
+                animate(index)
+            }
+
+        })
+        $("#btns span").click(function () {
+            index = $(this).index();
+            animate(index)
+        })
+
+        function animate(index) {
+            $("#list img").eq(index).fadeIn(500).siblings().fadeOut(500);
+            $("#btns span").eq(index).addClass("current").siblings().removeClass("current");
+        }
+    </script>
+   </script>
+</body>
+</html>

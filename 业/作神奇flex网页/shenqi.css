@@ -1,0 +1,92 @@
+*{margin: 0;padding: 0;}
+body{
+    background: black;
+}
+.container{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.header{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.bg{
+    background: url("images/动物.webp") no-repeat center;
+    height: 100%;
+    background-size: 100%;
+    filter: blur(30px);
+}
+.content{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #fff;
+}
+.content span{
+    color: #ec2c56;
+}
+.details{
+    height: 325px;
+    background: #fff;
+    border-bottom: 2px solid #d9d9d9;
+}
+.details p{
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.plot{
+    height: 320px;
+    background: #fff;
+    border-bottom: 2px solid #d9d9d9;
+}
+.plot-content p:nth-child(1){
+    line-height: 50px;
+    font-size: 20px;
+    color: #999999;
+    padding-top: 20px;
+}
+.plot-content p:nth-child(2){
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 4px;
+}
+.bt{
+    height: 340px;
+    background: #fff;
+}
+.yingren{
+    margin-left: 40px;
+    font-size: 20px;
+    color: #999999;
+    line-height: 50px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.actor{
+    display: flex;
+    justify-content: space-evenly;
+}
+.actor div{
+    text-align: center;
+}
+.actor span{
+    color: #999999;
+    font-size: 14px;
+}
+.actor img{
+    width: 136px;
+    height: 180px;
+}
+.movie-logo img{
+    width: 20%;
+    height: 20%;
+}
+.movie-logo{
+    position: absolute;
+    top: 190px;
+    right: -470px;
+}

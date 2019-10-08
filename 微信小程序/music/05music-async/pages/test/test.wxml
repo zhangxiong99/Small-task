@@ -1,0 +1,4 @@
+<view wx:for="{{musics}}">
+    <text>{{item.name}}</text>
+    <image src="{{item.picUrl}}"></image>
+</view>

@@ -1,0 +1,73 @@
+page{
+    width: 750rpx;
+    height: auto;
+  }
+.bg image{
+    width: 260rpx;
+    height: 260rpx;
+}
+.bg{
+    margin: 0 30rpx;
+    width: 306rpx;
+    height: 260rpx;
+    background: url("https://s2.music.126.net/style/web2/img/coverall.png?a3afa6b7ce3a94f9da60b1985abae993") no-repeat 0 -845px;
+}
+.nav{
+    display: flex;
+    height: 350rpx;
+    align-items: center;
+    background: url("http://p3.music.126.net/AC62_chVfpmxUIEtLccTYg==/109951164370176960.jpg?param=170y170") no-repeat;
+    background-size: 100%;
+}
+.name{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.nav-right{
+    color: rgb(206, 205, 205);
+}
+.list{
+    background-color: #c5c4c4;
+    padding: 3px 0;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.synopsis{
+    margin: 15px;
+    font-size: 14px;
+    display: -webkit-box; 
+    /* 子元素排列方向 */
+    -webkit-box-orient: vertical;
+    /* 限制行数 */
+    -webkit-line-clamp:5;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.state{
+    color: cyan;
+    float: right;
+    font-size: 30rpx;
+    margin: 20rpx;
+  } 
+.drop{
+    overflow: hidden;
+}
+.songs{
+    display: flex;
+    align-items: center;
+}
+.num{
+    padding: 0 15px;
+}
+.music{
+    width: 600rpx;
+}
+.music text{
+    font-size: 12px;
+    color: #8d8b8b;
+}
+.play{
+    width: 30px;
+    height: 30px;
+}

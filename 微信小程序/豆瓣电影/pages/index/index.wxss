@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.item{
+  padding: 10rpx;
+  margin-top: 20rpx;
+  box-shadow: 0 0 1px 1px rgb(170, 169, 169);
+}
+image{
+  width:210rpx;
+  height: 310rpx;
+}
+view{
+  font-size: 14px;
+}

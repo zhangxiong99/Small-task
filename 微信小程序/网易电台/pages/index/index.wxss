@@ -1,0 +1,35 @@
+.nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 10rpx 0;
+  box-shadow: 0 1px 1px 1px rgb(194, 193, 193);
+}
+.radio{
+  color: red;
+}
+.item{
+  display: flex;
+  margin-top: 10px;
+}
+.item image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+  margin: 0 10px;
+}
+.category{
+  border: 1px solid #333;
+  font-size: 12px;
+}
+.title{
+  font-size: 13px;
+}
+.count{
+  font-size: 12px;
+}
+.right{
+  width: 500rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

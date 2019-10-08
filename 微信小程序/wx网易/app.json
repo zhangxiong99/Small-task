@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/radio/radio",
+    "pages/songs/songs",
+    "pages/music/music"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor":"#C20C0C",
+    "position":"top",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "华语",
+      "iconPath":"",
+      "selectedIconPath":""
+    }, {
+      "pagePath": "pages/radio/radio",
+      "text": "电台",
+      "iconPath":"",
+      "selectedIconPath":""
+    }]
+  },
+  "requiredBackgroundModes": ["audio", "location"],
+  "sitemapLocation": "sitemap.json"
+}

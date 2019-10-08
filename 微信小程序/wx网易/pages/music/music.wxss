@@ -1,0 +1,97 @@
+.item{
+    position: relative;
+    height: 700rpx;
+}
+.content text{
+  font-size: 12px;
+}
+.pan{
+    position: absolute;
+    width: 500rpx;
+    height: 500rpx;
+    top: 210rpx;
+    left: 17%;
+}
+.handle{
+    position: absolute;
+    width: 222rpx;
+    height: 366rpx;
+    left: 43%;
+    z-index: 1;
+    transform: rotate(-30deg);
+    transform-origin: 60rpx 60rpx;
+}
+.content{
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+    text-align: center;
+}
+.aaa{
+    text-align: center;
+}
+.play{
+    width: 50px;
+    height: 50px;
+  }
+.container{
+  position: relative;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 320px;
+  height: 504px;
+  opacity: 0.4;
+}
+.bg2{
+  position: absolute;
+  top: 120px;
+  left: 86px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+@keyframes move{
+    0%{
+        transform: rotate(-30deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+/* animation-fill-mode 定义动画结束的位置  forwards/backwords */
+.move{
+    animation: move 0.5s ;
+    animation-fill-mode: forwards;
+}
+@keyframes unmove{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(-30deg)
+    }
+}
+.unmove{
+    animation: unmove 0.5s forwards;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.rotate{
+    animation: rotate 5s linear infinite;
+    animation-play-state: running;
+}
+.pause{
+    animation: rotate 5s linear infinite;
+    animation-play-state: paused;
+}

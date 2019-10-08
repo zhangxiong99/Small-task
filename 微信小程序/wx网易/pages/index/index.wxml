@@ -1,0 +1,11 @@
+<!--pages/mv/mv.wxml-->
+<view class="container">
+  <view class="item" wx:for="{{musics}}" wx:key="{{item}}" bind:tap="handleClick" data-id="{{item.id}}">
+      <image class="" src="{{item.imgUrl}}">
+      </image>
+      <view>
+        <text class="name">{{item.name}}</text>
+        <view><text class="author">by{{item.author}}</text></view>
+      </view>
+  </view>
+</view>

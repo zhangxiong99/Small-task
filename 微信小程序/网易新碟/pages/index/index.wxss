@@ -1,0 +1,30 @@
+.container{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.nav{
+  font-size: 20px;
+  padding:7px 0;
+  border-bottom: 2px solid #C20C0C;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row{
+  margin-top: 10px;
+}
+.row text{
+  font-size: 13px;
+  color: #888787;
+}
+.bg{
+  width: 212rpx;
+  height: 212rpx;
+  background: url('https://s2.music.126.net/style/web2/img/coverall.png?a3afa6b7ce3a94f9da60b1985abae993') no-repeat -10px -570px;
+}
+image{
+  width: 180rpx;
+  height: 198rpx;
+}

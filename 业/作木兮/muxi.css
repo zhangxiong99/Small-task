@@ -1,0 +1,92 @@
+.mx-nav {
+    width: 80%;
+    margin: 0 auto;
+}
+#logo {
+    display: inline-block;
+    width: 241px;
+    height: 80px;
+}
+#navbar {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+.navbar-header>a {
+    display: inline-block;
+    width: 241px;
+    height: 80px;
+    background: url("../images/logo0.png") no-repeat center center;
+}
+.select {
+    border-bottom: 2px solid #2dae36;
+}
+#nav-right a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.mx-nav .navbar-default .navbar-toggle .icon-bar {
+    background-color: #2dae36;
+}
+.mx-nav .navbar-default .navbar-toggle {
+    border-color: #2dae36;
+    margin: 23px auto;
+}
+.mx-nav .navbar {
+    border: none;
+}
+.title{
+    height: 120px;
+    text-align: center;
+    margin-top:20px;
+}
+.title h3{
+    margin-top:20px;
+}
+
+.logo div{
+    text-align: center;
+}
+.logo h3{
+    color:#2dae36;}
+   
+.border-solid{
+   width:100%;
+   height:43px;
+    border-bottom: 2px solid #2dae36;
+    overflow: hidden;
+}
+.zhanshi{
+    height:43px;
+    width:122px;
+    background: #2dae36;
+    border-radius: 25px 1px;
+    color:white;
+    text-align: center;
+    line-height: 45px;
+}
+.photo{
+    width:100%;
+    overflow: hidden;
+}
+.photo img{
+    width:100%;
+    overflow: hidden;
+    margin-top:30px;
+}
+.foot{
+    margin-top:30px;
+    background: #dddddd;
+    width:100%;
+    overflow: hidden;
+}
+
+.foot-top div{
+    margin-top:20px;
+    text-align: center;
+}
+
+.foot-top div:nth-last-child(1){
+    line-height: -10px;
+}

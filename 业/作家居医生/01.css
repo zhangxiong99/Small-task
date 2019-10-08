@@ -1,0 +1,427 @@
+*{margin: 0;padding: 0;} 
+.logo{
+    height: 60px;
+    background-color:#1abebf;
+    text-align: center;
+} 
+
+.location{
+    height: 4opx;
+    background-color:#efefef;
+ 
+}
+.ko{
+    height: 40px;
+    width: 1000px;
+    background-color:#efefef;
+    position: relative; 
+    margin: auto auto;
+} 
+
+.kl{
+    height: 40px;
+    width: 100px;
+    background-color:#efefef;
+    position:absolute;
+    left: 0;
+    top: 0;    
+}
+
+.ki{
+    height: 40px;
+    width: 100px;
+    background-color: #efefef;
+    position: absolute;
+    right: 0;
+    top: 0;
+}  
+.ko ul{
+    list-style: none;
+    cursor: pointer;
+}
+.ko li{
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.hen{
+    margin-left: 300px;
+    cursor: pointer;
+
+
+    }
+.kn,.ki{
+    font-size: 12px;  
+    line-height: 40px;
+    margin-left: 30px;  
+    cursor: pointer;    
+}
+.kl>img{
+    float: left;
+    top: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ki>img{
+    float: left;
+    margin-top: 10px;
+    top:50%;
+    cursor: pointer;
+}
+.home{
+    width: 1000px;
+    line-height:45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+.food{
+    width: 1000px;
+    height: 200px;
+    background-color: #efefef;
+    position: relative;
+   
+
+}
+.food ul{
+    list-style: none;
+    overflow: hidden;
+}
+.food div{
+    line-height: 50px;
+}
+.food li{
+    float: left;
+    line-height: 50px;
+    width: 70px;
+} 
+.li1{
+    margin-left: 20px;
+    color: #47C6C3;
+}
+.tube{
+    height: 60px;
+    margin-top: 30px;
+    background-color: #efefef;
+}
+.tube ul{
+    list-style: none;
+    overflow: hidden;    
+}
+.tube li{
+    float: left;
+    width: 95px;
+}
+.tube div{
+    line-height: 50px;
+}
+.nav{
+  height: 50px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #efefef;
+  position: relative;
+  margin-top: 20px;
+
+}
+.nav p,.nav img{
+  display: inline-block;
+  margin-right: 26px;
+
+ 
+}
+.search{
+
+position:absolute;
+  left: 550px;
+  top: 17px; 
+  z-index: 100;
+
+}
+.pla{
+    width:200px;
+    outline: none;
+    height: 38px;
+    font-size: 14px;
+     border: 1px solid #eee; 
+     padding-left: 35px;
+}
+
+.suo{
+ height: 20px;
+ width: 40px;
+ border: none;
+ background-color: white;
+  position: absolute; 
+ left: 570px;
+ top: 13px;
+}
+.col{
+  color: #4c8dae;
+  position: absolute;
+  right: 20px;  
+  top: 2px;
+}
+.wen{
+position: absolute;
+  top: 16px;
+  right: 243px;
+
+}
+.parent{
+  width: 1000px;
+  overflow: hidden;
+  margin-top: 20px;
+ 
+}
+.parent>div{
+  width: 238px;
+  border:1px solid #dedede;
+  height: 430px;
+  float:left;
+}
+.parent>.one{
+  margin-right: 13px;
+  background-color: #eee;
+}
+.parent>.two{
+  margin-right: 14px;
+  background-color: #eee;
+}
+.parent>.tene{
+  background-color: #eee;
+  
+}
+.ge{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+}  
+.deer{
+margin-left: 20px;
+font-size: 16px;
+font-weight: bold; 
+margin-bottom: -13px;
+}
+.dee{
+margin-left: 20px;
+color: #ffa700;
+font-weight: bold; 
+font-size: 16px;
+margin-bottom: -13px;
+
+}
+.der{
+margin-left: 20px;
+color: #18BEBE;
+font-weight: bold; 
+font-size: 18px;
+margin-top: 20px;
+
+}
+.deerr{
+    color: #ffa700;
+    font-weight: bold; 
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tuliao{
+position: relative;
+}
+.lest{
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+}
+.sheet{
+    width: 1000px;
+    height: 50px;
+    margin-top: 20px;
+    position: relative; 
+}                 
+.sheet-ul{
+    list-style: none;
+    margin-left: 160px;
+ 
+}
+.sheet-ul>li{
+    float: left;
+    width: 30px;
+}
+.hornfels{
+   width: 120px;
+   height: 30px;
+   position: absolute;
+   left: 320px;
+   top: 10px;
+   background-color: #ebebeb;
+}
+.homepage{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 0;
+    top: 10px;
+    background-color: #ebebeb;
+}
+.ye{
+    margin-left: 180px;
+}
+.put{
+    width: 20px;
+    height: 25px;
+
+}
+.qd{
+    margin-left: 175px;
+    background: #FFA700;
+    height: 37px;
+    width: 53px;
+    margin-top:-10px;
+}
+  .xia{
+  color: #FFA700;
+  }  
+  .san {
+    height: 80px;
+    width: 1000px;
+    position: relative;
+
+  }
+  .san img{
+    float: left;
+    border: 1px solid #333;
+    display: block;
+    margin: 0 16px;
+  }
+
+  .feedback{
+     height: 80px;
+     width: 1000px;
+     position: absolute;
+     bottom: -10px;
+     left: 10px;
+  }
+  .feedback p{
+    overflow: hidden;  
+    margin-bottom: -60px;  
+}
+.caiku{
+    margin-top:53px;
+    font-size: 14px;
+    margin-left: 120px;
+    position: relative;
+    line-height: 25px;
+}
+.ce{
+    color: #18BEBE;
+    margin-left: 120px;
+    font-size: 18px;
+    position: relative;
+    margin-top: -26px;
+    line-height: 63px;
+}  
+.foot{
+    height: 300px;background-color: rgb(81, 81,81)
+
+}
+.foot-top{
+    height: 205px;
+    width: 1000px;
+ /* background: blue;  */
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #333;
+}
+.left img{
+  position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.footer{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 65px;
+    color: #FFFFFF;
+}
+.footer-e{
+position: absolute;
+    margin-left: 10px;
+    margin-top: 95px; 
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.center-one>p{ 
+    left: 530px;
+    font-size: 13px;
+    top:49px; 
+    line-height: 32px; 
+     position: relative; 
+     color: #FFFFFF;
+}
+.center-two{
+    left: 670px;
+    font-size: 13px;
+    top:-46px; 
+    line-height: 32px; 
+     position: relative; 
+     color: #FFFFFF;
+}
+.right {
+    left: 810px;
+    top:-155px; 
+    line-height: 42px; 
+     position: relative; 
+}
+.jiewei{
+    left: 860px;
+    top:-281px; 
+    line-height: 40px; 
+     position: relative; 
+     font-size: 13px;
+     color: #FFFFFF;
+}
+.jiewei>ul{
+    list-style: none;
+}
+ li{
+    list-style: none;
+}
+.foot-bottom{
+    margin-top: 15px;
+    height: 80px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.jianzhu{
+    font-size: 13px;
+    position: relative; 
+    margin-left: 30px;
+    color: #FFFFFF;
+
+}
+.yisheng{
+    font-size: 13px;
+    position: relative; 
+    margin-left: 250px;
+    margin-top: -16px;
+    color: #FFFFFF;
+}
+.ezhou{
+    font-size: 13px;
+    position: relative;
+    margin-left: 660px;
+    margin-top: -19px;
+    color: #FFFFFF;
+
+
+}

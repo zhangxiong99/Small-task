@@ -1,0 +1,153 @@
+*{margin: 0;padding: 0;}
+.logo{
+    width: 1130px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.mi-logo{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #F56600 url("images/mi-logo.png") no-repeat center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.logo p{
+    margin-left: 70px;
+    font-size: 10px;
+}
+.logo .tp-p{
+    font-size: 32px;
+    margin-top:23px;
+}
+.container{
+    height: 590px;
+    background-image: url("images/banner.png");
+    background-position-x: 50%;
+   
+}
+.content{
+    width: 1130px;
+    height: 590px;
+    margin: 0 auto;
+    position: relative;
+}
+.login{
+    position: absolute;
+    width: 400px;
+    height: 525px;
+    background:#fff;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.active{
+    color: #F56600;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+.nav>li{
+    padding: 0 15px;
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+input{
+    width: 85%;
+    height: 50px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    
+}
+.sign-in{
+    margin-top: 25px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: #F56600;
+}
+.register>li{
+    font-size: 13px;
+    margin-top: 22px;
+}
+.middle-line::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 85%;
+    background-color: #999;
+    position: relative;
+    top: 110px;
+    left: 0;
+    margin-left: 30px;
+}
+.middle-line>span{
+    display: inline-block;
+    background: #fff;
+    padding: 0 5px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.bt-icons a{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 50%;
+    margin:20px;
+}
+.bt-icons span{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("images/icons_type.png");
+    background-repeat: no-repeat;
+}
+.bt-icons .qq{
+    background-position-x: -19px;
+}
+.bt-icons .weibo{
+    background-position-x: -38px;
+}
+.bt-icons .pay{
+    background-position-x: -56px;
+    width: 26px;
+}
+.bt-icons .wechat{
+    background-position-x: -68px;
+    width: 55px;
+}
+.copyright{
+    text-align: center;
+    height: 217px;
+}
+.tp-copyright,.bt-copyright{
+    font-size: 8px;
+    color:#757575;
+}
+.tp-copyright{
+    padding-top: 80px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color:#757575;
+    margin-top: 20px;
+}
+.Typeface{
+    color: black;
+}

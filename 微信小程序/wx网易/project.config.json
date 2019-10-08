@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wxa32c03f32228ca95",
+	"projectname": "wx%E7%BD%91%E6%98%93",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "radio",
+					"pathName": "pages/radio/radio",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "歌单",
+					"pathName": "pages/songs/songs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "播放",
+					"pathName": "pages/music/music",
+					"scene": null
+				}
+			]
+		}
+	}
+}

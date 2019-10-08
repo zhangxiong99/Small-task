@@ -1,0 +1,24 @@
+
+<view class="nav">
+    <form bind:submit="handleSubmit">
+        <view class="form">
+          <input type="text" name="keyword" placeholder="书名、作者、ISBN" />
+          <view class="btn-wrap">
+            <button form-type="submit">查</button>
+          </view>
+        </view>
+      </form>
+</view>
+<view class="container">
+    <view class="item"  wx:for="{{Book}}" wx:key="{{item}}" data-id="{{item.id}}}" bind:tap="handleClick">
+      <view class="left">
+        <image src="{{item.imgUrl}}"></image>
+      </view>
+      <view class="right">
+        <text class="title">{{item.title}}</text>
+        <view><text class="num">★★★★☆{{item.average}}({{item.num}}人评价)</text></view>
+        <text class="author">{{item.author}}/{{item.publisher}}</text>
+      </view>
+    </view>
+  </view>
+  

@@ -1,0 +1,26 @@
+.nav{
+    font-size: 30px;
+}
+image{
+    width: 350rpx;
+    height: 500rpx;
+}
+.content{
+    display: flex;
+    margin-top: 15px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.right>text{
+    margin-bottom: 10rpx;
+}
+.ft view:first-child{
+    color: green;
+    margin: 10px 0;
+}
+.ft view:last-child{
+    font-size: 14px;
+    text-indent: 28px;
+}

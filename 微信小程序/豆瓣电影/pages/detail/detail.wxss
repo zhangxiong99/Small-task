@@ -1,0 +1,12 @@
+.container{
+    text-align: center;
+}
+image{
+    width: 270rpx;
+    height: 400rpx;
+}
+.text{
+    text-align:left; 
+    text-indent: 28px;
+    font-size: 14px;
+}

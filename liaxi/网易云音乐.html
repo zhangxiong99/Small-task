@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="lib/music.js"></script>
+    <link rel="stylesheet" href="yiyun.css">
+</head>
+<body>
+        <div id="app" >    
+        </div>
+        <div class="loading">
+        </div>
+    <script>
+        http({
+            callback:handleData
+        })
+        function handleData(res){
+            var programs = res.programs;
+            var music = [];
+            for(var i=0;i<programs.length;i++){
+                var obj = {}
+                obj.name = programs[i].mainSong.name;
+                obj.coverUrl = programs[i].blurCoverUrl;
+                obj.radioname = programs[i].radio.name;
+                obj.listenerCount = programs[i].listenerCount;
+                obj.likedCount =programs[i].likedCount;
+                obj.radiocategory = programs[i].radio.category;
+                music.push(obj)
+            }
+            for(var j =0;j<music.length;j++){
+                var item = $(`<div class="ap"><img src="${music[j].coverUrl}"/><span>${music[j].name}</span>
+                    <span>${music[j].radioname}</span>
+                    <span>播放${music[j].listenerCount}</span> 
+                    <span>赞${music[j].likedCount}</span>
+                    <button>${music[j].radiocategory}</button>
+                    </div>`)
+                $("#app").append(item)
+            }
+        }
+    </script>
+</body>
+</html>

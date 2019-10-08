@@ -1,0 +1,70 @@
+view,text{
+    color: #fff;
+}
+.nav{
+    display: flex;
+    padding: 10px;
+}
+.navimg{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.sub{
+    font-size: 12px;
+}
+.title{
+    font-size: 13px;
+}
+.imgurl{
+    width: 400rpx;
+    height: 400rpx;
+    margin-top: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 4px rgb(117, 117, 117);
+}
+.content{
+    text-align: center;
+    position: relative;
+}
+.btn{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.name{
+    margin-top: 30px;
+}
+.container{
+    position: relative;
+}
+.bg{
+    position: absolute;
+    width: 750rpx;
+    height: 1206rpx;
+    top: 0;
+    z-index: -1;
+    filter: blur(5px);
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.rotate{
+    animation: rotate 10s linear infinite;
+    animation-play-state: running;
+}
+.pause{
+    animation: rotate 10s linear infinite;
+    animation-play-state: paused;
+}

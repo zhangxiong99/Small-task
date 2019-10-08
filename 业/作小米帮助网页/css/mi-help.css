@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    height: 40px;
+    line-height: 40px;
+    background: black;
+}
+.nav-row{
+    width: 1226px;
+    margin: 0 auto;
+    color: rgb(70, 69, 69);
+    font-size: 10px;
+}
+.nav-row a{
+    color: #9B9B9B;
+}
+.nav-row a:hover{
+    color: #fff;
+}
+.nav-left{
+    float: left;
+}
+.nav-right{
+    float: right;
+    position: relative;
+}
+.nav-right button{
+    margin-left: 20px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: rgb(90, 90, 90);
+    color: #9B9B9B;
+    cursor: pointer;
+}
+.nav-right button:hover{
+    background: #fff;
+    color: #FF6700;
+}
+.nav-right button:hover+div{
+    display: block;
+}
+.drop-box{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 325px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px 1px rgb(146, 146, 146);
+    z-index: 1;
+    display: none;
+}
+.header{
+    width: 1226px;
+    margin: 0 auto;
+    height: 100px;
+    
+    position: relative;
+}
+.mi-logo{
+    position: absolute;
+    height: 55px;
+    width: 55px; 
+    background: url("../images/mi-help/mi-logo.png") no-repeat center #FF6700;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.menu>li{
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 40px 0;
+}
+.menu>li:not(:nth-child(1)):hover{
+    color: #FF6700;
+}
+.menu{
+    margin-left: 120px;
+}
+.search{
+    position: absolute;
+    right: 0;
+}
+.search input{
+    width: 230px;
+    height: 50px; 
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    outline: none;
+}
+input{
+    border: #9B9B9B 1px solid;
+}
+.search .btn{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    float: left;
+    margin-left: -1px;
+    margin-top: 25px;
+    outline: none;
+}
+.search div{
+    width: 230px;
+    height: 185px;
+    border: 1px solid #FF6700;
+    box-sizing: border-box;
+    position: absolute;
+    top: 74px;
+    display: none;
+    background: #fff;
+}
+.search-text:focus+div{
+    display: block;
+}
+input:focus~input{
+    border: 1px solid #FF6700;
+}
+input:focus{
+    border: 1px solid #FF6700;
+}
+.search li{
+    line-height: 30px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.drop-memu-main{
+    position: relative;
+}
+.drop-memu-main:hover .drop-down-main{
+    display: block;
+}
+.drop-down-main{
+    position: absolute;
+    top: 100px;
+    left: -120px;
+    width: 230px;
+    height: 420px;
+    background: #fff;
+    border: 1px solid #FF6700;
+    display: none;
+}
+.drop-down-main>ul{
+    padding: 30px 0 20px 0px;
+}
+.drop-down-main>ul>li{
+    line-height: 40px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.drop-down-main>ul>li:hover{
+    background: #FF6700;
+    color: #fff;
+}
+.drop-memu-main-frame{
+    position: relative;
+}
+.drop-memu-main-frame:hover h2{
+    color: black;
+}
+.drop-memu-main-frame:hover .drop-down-main-frame{
+    display: block;
+}
+.drop-down-main-frame{
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 231px;
+    width: 990px;
+    height: 420px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 3px 3px 5px 1px   rgb(197, 197, 197);
+}
+.drop-down-main-frame h2{
+    font-size: 50px;
+    margin-top: 140px;
+    line-height: 60px;
+}
+.container{
+    background: rgb(240, 239, 239);
+    padding-bottom: 100px;
+}
+.content{
+    width: 1226px;
+    margin: 0 auto;
+    
+}
+.crumb{
+    font-size: 12px;
+    line-height: 40px;
+    
+}
+.crumb a{
+    display: inline-block;
+    color: black;
+}
+.content h3{
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.service{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.service div{
+    cursor: pointer;
+    width: 296px;
+    height: 277px;
+    background: #fff;
+    transition: transform 0.7s;
+}
+.service-row img{
+    margin-top: 76px;
+}
+.service-row h4{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.service-row p{
+    font-size: 13px;
+    margin-top: 16px;
+}
+.service div:hover{
+    color: #FF6700;
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px 1px rgb(192, 191, 191);
+}
+.service-centre{
+    overflow: hidden;
+}
+.after-sale-left{
+    float: left;
+    width: 614px;
+}
+.after-sale-left img{
+    width: 100%;
+}
+.after-sale-right{
+    background: #fff;
+    height: 360px;
+    text-align: center;
+    width: 612px;
+    float: right;
+}
+.after-sale-right h4{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.after-sale-right ul{
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.after-sale-right a{
+    color: black;
+}
+.after-sale-right a:hover{
+    color: #FF6700;
+}
+.problem{
+    text-align: center;
+}
+.problem input{
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+}
+.problem button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+    margin-left: -5px;
+    position: absolute;
+    right: 0;
+}
+.problem-search{
+    width: 771px;
+    margin: 0 auto;
+    position: relative;
+}
+.problem-menu{
+    margin-top: 40px;
+}
+.menu-row{
+    display: flex;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+.problem-menu .menu-row li{
+    line-height: 67px;
+    flex: 1;
+}
+.menu-row li:nth-child(1){
+    background: #FF6700;
+    color: #fff;
+}
+.menu-row li:hover{
+    background: #FF6700;
+    color: #fff;
+}
+.problem-list{
+    height: 190px;
+    background: #fff;
+    overflow: hidden;
+}
+.problem-list ul{
+    float: left;
+    width: 44%;
+    text-align: left;
+    margin-left: 6%;
+    margin-top: 36px;
+}
+.problem-list ul li{
+    line-height: 40px;
+    list-style: disc;
+    color: #e2e2e2;
+}
+.problem-list ul li:hover{
+    color: #FF6700;
+}
+.problem-list a{
+    color: black;
+}
+.problem-list a:hover{
+    color: #FF6700;
+}
+.contact>div{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-row div{
+    width: 400px; 
+    height: 276px;
+    background: url("../images/mi-help/icon1.png") no-repeat center #fff;
+    background-position-x: 100px;
+    transition: transform 0.7s;
+    cursor: pointer;
+}
+.contact-row p{
+    line-height: 276px;
+    text-align: center;
+    margin-left: 40px;
+}
+.contact-row div:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px 1px rgb(192, 191, 191);
+}
+.ft{
+    background: #fff;
+}
+.ft-content{
+    width: 1226px;
+    margin: 0 auto;
+}
+.ft-project ul{
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.ft-project ul li{
+    cursor: pointer;
+    flex: 1;
+    margin: 30px 0;
+    border-right: 1px solid rgb(196, 195, 195);
+}
+.ft-project ul li:hover{
+    color: #FF6700;
+}
+.ft-project ul li:nth-child(5){
+    border: none;
+}
+.ft-menu{
+    display: flex;
+    height: 192px;
+}
+.ft-menu-left{
+    flex: 4;
+    display: flex;
+}
+.ft-menu-left>div{
+    flex: 1;
+    margin-top: 30px;
+}
+.ft-menu-left span{
+    display: block;
+    margin-bottom: 30px;
+}
+.ft-menu-left p{
+    font-size: 12px;
+    line-height: 23px;
+}
+.ft-menu-left a{
+    color: black;
+}
+.ft-menu-left a:hover{
+    color: #FF6700;
+}
+.ft-menu-right{
+    flex: 1;
+    height: 120px;
+    text-align: center;
+    margin-top: 30px;
+    border-left: #9B9B9B 1px solid;
+}
+.ft-menu-right h3{
+    font-size: 23px;
+    font-weight: 300;
+    color: #FF6700;
+}
+.ft-menu-right p{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.ft-menu-right button{
+    outline: none;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    border: #FF6700 1px solid;
+    color: #FF6700;
+    background: #fff;
+}
+.ft-menu-right button:hover{
+    color: #fff;
+    background: #FF6700;
+}
+.copyright{
+    background: rgb(240, 239, 239);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80px;
+}
+.copyright-content{
+    width: 1226px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.copyright-logo{
+    float: left;
+    width: 57px;
+    height: 57px;
+    background: url("../images/mi-help/mi-logo.png") no-repeat center #FF6700;
+}
+.copyright-content a{
+    font-size: 12px;
+    color: black;
+}
+.copyright-text{
+    float: left;
+    margin-left: 10px;
+}
+.copyright-text p{
+    font-size: 12px;
+    color: rgb(148, 147, 147);
+}
+.copyright-text ul li{
+    float: left;
+}
+.copyright-text p img{
+    width: auto;
+    height: 28px;
+}
+.copyright-ft {
+    line-height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+    font-family:"Microsoft JhengHei";
+}

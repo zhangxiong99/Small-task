@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <form bind:submit="handleSubmit">
+    <view class="form">
+      <view class="search-wrap">
+        <image class="search-bg" src="/images/search.png"></image>
+        <input type="text" name="keyword" placeholder="请搜索" />
+      </view>
+
+      <button form-type="submit">搜索</button>
+    </view>
+
+  </form>
+</view>
+<view class="content">
+  <view class="item" wx:for="{{musics}}" wx:key="{{item}}">
+    <view class="left">
+        <text class="num">{{index+1}}</text>
+        <image class="item-bg" src="/images/item.jpg"></image>
+        <view>
+          <text class="name">{{item.name}}</text>
+          <view class="artist">by:<text>杨幂</text></view>
+        </view>
+    </view>
+    <view class="right">
+        <text>03:46</text>
+        <image class="play" src="/images/pause.png"></image>
+    </view>
+    
+  </view>
+</view>

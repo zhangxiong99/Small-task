@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="lib/http.js"></script>
+    <style>      
+        #app{
+            padding: 20px;
+            max-width: 748px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .loading{
+            position: fixed;
+            left:0;right:0;top:0;bottom:0;
+            background: #fff url('images/loading.gif') no-repeat center;
+        }
+        .item>img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="app" >
+            
+    </div>
+    <div class="loading">
+
+    </div>
+    <script>
+        var start = 0;
+        http({
+            data:{
+                start
+            },
+            callback:handleData
+        })
+        function handleData(res){
+            var subjects = res.subjects;
+                var movies = [];
+                for(var i=0;i<subjects.length;i++){
+                    var obj = {}
+                    obj.title = subjects[i].title;
+                    obj.imageUrl = subjects[i].images.small;
+                    movies.push(obj)
+                }
+                for(var j =0;j<movies.length;j++){
+                    var item = $(`<div class="item"><img src="${movies[j].imageUrl}"/><p>${movies[j].title}</p></div>`)
+                    $("#app").append(item)
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<view class="container" >
+    {{msg}}
+</view>
+<view wx:for="{{arr}}" wx:key="{{item}}">
+    {{item}}
+</view>
+

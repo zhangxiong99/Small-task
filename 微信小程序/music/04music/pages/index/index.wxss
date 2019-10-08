@@ -1,0 +1,78 @@
+.form{
+  display: flex;
+  padding:10px 20px;
+  background: #333;
+}
+input{
+  height: 100rpx;
+}
+.search-wrap{
+  border:1px solid #333;
+  border-radius: 50rpx;
+  padding-left: 40px;
+  flex:1;
+  background: #fff;
+  position: relative;
+}
+button{
+  background: #fff;
+  border-radius: 50rpx;
+  width:180rpx;
+  border:1px solid #fff;
+  color:#333;
+  margin-left: 20px;
+  line-height: 100rpx;
+  font-size: 25rpx;
+}
+.search-bg{
+  position: absolute;
+  width:40rpx;
+  height: 40rpx;
+  top:50%;
+  transform: translateY(-50%);
+  left:10px;
+}
+.play{
+  width:80rpx;
+  height:80rpx;
+}
+.item-bg{
+  width:100rpx;
+  height: 100rpx;
+  margin-right: 30rpx;
+  margin-right: 30rpx;
+}
+.num{
+  margin-right: 10rpx;
+  font-size: 40rpx;
+  color:#C20C0C;
+}
+.item{
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.left>view{
+  flex:1;
+}
+.item .left{
+  flex:1;
+  display: flex;
+  align-items: center;
+}
+.name{
+  color:rgb(69, 162, 233);
+  font-size: 30rpx;
+}
+.item .right{
+  display: flex;
+  align-items: center;
+}
+.item .play{
+  margin-left: 20px;
+}
+.artist{
+  color:rgb(82, 80, 80);
+}

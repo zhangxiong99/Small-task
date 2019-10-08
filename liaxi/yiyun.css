@@ -1,0 +1,49 @@
+#app{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loading{
+    position: fixed;
+    left:0;right:0;top:0;bottom:0;
+    background: #fff url('images/loading.gif') no-repeat center;
+}
+.ap{
+    height: 80px;
+    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+    /* background: pink; */
+}
+.ap>img{
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+.ap>button{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -0.7em;
+}
+.ap>span{
+    line-height: 80px;
+}
+.ap>span:nth-child(2){
+    position: absolute;
+    left:55px;
+}
+.ap>span:nth-child(3){
+    position: absolute;
+    left:400px;
+}
+.ap>span:nth-child(4){
+    position: absolute;
+    right: 25%; 
+}
+.ap>span:nth-child(5){
+    position: absolute;
+    right: 20%;
+}

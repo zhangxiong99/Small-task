@@ -1,0 +1,21 @@
+<view class="container" wx:for="{{radio}}" wx:key="{{item}}">
+    <view class="nav">
+        <view>
+            <image class="navimg" src="{{item.picurl}}"></image>
+        </view>
+        <view>
+            <view>{{item.title}}</view>
+            <text class="sub">{{item.subcount}}人订阅</text>
+        </view>
+    </view>
+    <view class="content">
+        <view>
+            <image class="imgurl {{isPlay?'pause':'rotate'}}" src="{{item.imgurl}}"></image>
+        </view>
+        <view class="name">{{item.name}}</view>
+        <view class="title">{{item.title}}</view>
+        <image class="btn" bind:tap="handleClick" data-url="{{item.url}}" data-name="{{item.name}}"
+         src="{{isPlay?'../../images/pause.png':'../../images/play.png'}}"></image>
+    </view>
+    <image class="bg" src="{{item.blururl}}" ></image>
+</view>

@@ -1,0 +1,15 @@
+<view class="container" >
+  <view class="nav">
+    <text>全部新碟</text>
+  </view>
+  <view class="content" > 
+    <view class="row"  wx:for="{{video}}" wx:key="{{itme}}"
+   data-id="{{item.id}}" bind:tap="handleClick">
+      <view class="bg">
+        <image src="{{item.pic}}"></image>
+      </view>
+      <view>{{item.name}}</view>
+      <text>{{item.artists}}</text>
+    </view>
+  </view>
+</view>

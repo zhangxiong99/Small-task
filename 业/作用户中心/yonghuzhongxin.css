@@ -1,0 +1,262 @@
+*{margin: 0; padding: 0;}
+.top{
+    height: 75px;
+    background: #19BEBE url("images/logo.png") no-repeat center;
+}
+.nav{
+    height: 40px;
+    line-height: 40px;
+    background: #F0F0F0;
+    margin-bottom: 20px;
+}
+span{
+    display: inline-block;
+  
+}
+.nav-row{
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+.nav-left{
+    position: absolute;
+    left: 10px;
+    font-size: 12px;
+}
+
+.mg{
+    float: left;
+    top: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.nav-left>i{
+    color: #19BEBE;
+}
+.nav-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-center>span{
+    margin: 0 25px;
+    font-size: 18px;
+}
+.nav-right{
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    color: #FBB630;
+}
+.mg-m{
+    float: left;
+    top: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container{
+    width: 1000px;
+    height: 840px;
+    margin: 0 auto;
+    position: relative;
+}
+.content-left{
+    position: absolute;
+    width: 180px;
+    height: 840px;
+    background: #F0F0F0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.content-left ul{
+    margin-top: 20px;
+}
+.one{
+    margin-top: -20px;
+}
+.content-left li{
+    margin-left: 36px;
+    padding: 4px 0;
+    font-size: 15px;
+}
+.user{
+    position: relative;
+    font-size: 18px;
+    width: 180px;
+    height: 65px;
+    border: 1px solid #E0E0E0;
+    border-left:3px solid #19BEBE;
+    box-sizing: border-box;
+}
+.user a{
+    display: block;
+    position: absolute;
+    padding: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #19BEBE;
+}
+
+ul span{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-image: url("images/open.png");
+    background-repeat: no-repeat;
+    margin-left: -20px;
+    padding-right: 5px;
+}
+ul>li:nth-child(1){
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 16px;
+}
+.content-right{
+    width: 810px;
+    height: 840px;
+    background: #F0F0F0;
+    position: absolute;
+    right: 0;
+}
+.user-name{
+    height: 155px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.user-name>img{
+    float: left;
+    margin-top: 23px;
+    margin-left: 30px;
+}
+.user-name p:nth-of-type(1){
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.user-us{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+}
+.line{
+    height: 95px;
+    width: 1px;
+    border-right: 1px solid #CECECE;
+    margin-left: 317px;
+    margin-top: 25px;
+}
+.user-wx{
+    font-size: 13px;
+}
+
+.user-wx img{
+    position: absolute;
+    top: 35%;
+    left: 350px;
+}
+.user-wx span{
+    position: absolute;
+    top: 40%;
+    left: 400px;
+}
+.weixin{
+    margin-top: -5px;
+}
+.bd{
+    margin-top: 10px;
+}
+.user-name a{
+    color: #19BEBE;
+}
+.user-sj{font-size: 13px;}
+.user-sj img{
+    position: absolute;
+    top: 35%;
+    left: 550px;
+}
+.user-sj span{
+    position: absolute;
+    top: 40%;
+    left: 600px;
+}
+.phone{
+    margin-top: -5px;
+}
+.bd{
+    margin-top: 10px;
+}
+.bottom{
+    height: 220px;
+    background: #515151;
+    color: #fff;
+}
+.bottom-nav{
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo{
+    padding: 20px 20px;
+    float: left;
+}
+.logo>.logo-top-p{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.logo p{
+    font-size: 11px;
+    
+}
+.bottom-nav-row{
+    position: relative;
+}
+.bottom-nav-row a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 75px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.bottom-nav-row img{
+    margin-left: 50px;
+    position: absolute;
+    bottom: 0;
+}
+.bottom-nav-row>a:nth-of-type(1){
+    margin-left: 80px;
+}
+.bottom-nav-row>a:nth-of-type(3){
+    margin-left: 90px;
+}
+.bottom-nav-wrap{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 50px;
+ }
+ .copyright{
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-top: 1px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.copyright .ft-p{
+    float: left;
+    margin-right: 430px;
+}
+.copyright p{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+}

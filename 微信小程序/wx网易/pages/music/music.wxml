@@ -1,0 +1,18 @@
+
+<view class="container" wx:for="{{music}}" wx:key="{{item}}">
+    <view class="item" >
+        <image class="{{isPlay?'unmove':'move'}} handle"src="../../images/shou.png" ></image>
+        <image class="pan"   src="../../images/pan.png" ></image>
+        
+    </view>
+    <view class="content">
+        <view>{{item.title}}</view>
+        <text>{{item.name}}</text>
+    </view>
+    <view class="aaa">
+        <image class="play"  bind:tap="handleClick"  data-url="{{item.url}}" data-title="{{item.title}}"
+         src="{{isPlay&&prevId==item.id?'../../images/pause.png':'../../images/play.png'}}" ></image>
+    </view>
+    <image class="bg" src="{{item.imgUrl}}"></image>
+    <image class="bg2 {{isPlay?'pause ':'rotate'}}" src="{{item.imgUrl}}"></image>
+</view>
